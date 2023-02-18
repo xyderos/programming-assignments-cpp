@@ -2,7 +2,7 @@
 
 #include <algorithm>
 
-auto
+static auto
 contains_permutation(std::vector<int> v1, std::set<std::vector<int>> &v) -> bool
 {
 
