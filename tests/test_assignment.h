@@ -4,7 +4,7 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 
     private:
 	CPPUNIT_TEST_SUITE(test_assignment);
-	CPPUNIT_TEST(test_unique_quadruplets);
+	CPPUNIT_TEST(first_test);
 
 	CPPUNIT_TEST_SUITE_END();
 
@@ -13,7 +13,7 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 	void tearDown() override { }
 
     protected:
-	void test_unique_quadruplets();
+	void first_test();
 };
 
 CPPUNIT_TEST_SUITE_REGISTRATION(test_assignment);
