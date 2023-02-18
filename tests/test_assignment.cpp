@@ -4,7 +4,14 @@
 #include "test_assignment.h"
 
 void
-test_assignment::first_test()
+test_assignment::test_quantrant_should_produce_valid_result()
 {
-	CPPUNIT_ASSERT(true);
+	std::vector<int> input { -1, 2, 1, -4 };
+	int target = 1;
+
+	auto result = quantrant(input, target);
+
+	auto expected = 2;
+
+	CPPUNIT_ASSERT_EQUAL(expected, result);
 }
