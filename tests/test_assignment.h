@@ -4,8 +4,9 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 
     private:
 	CPPUNIT_TEST_SUITE(test_assignment);
-	CPPUNIT_TEST(first_test);
-
+	CPPUNIT_TEST(test_add_two_numbers_first_case);
+	CPPUNIT_TEST(test_add_two_numbers_second_case);
+	CPPUNIT_TEST(test_add_two_numbers_third_case);
 	CPPUNIT_TEST_SUITE_END();
 
     public:
@@ -13,7 +14,9 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 	void tearDown() override { }
 
     protected:
-	void first_test();
+	void test_add_two_numbers_first_case();
+	void test_add_two_numbers_second_case();
+	void test_add_two_numbers_third_case();
 };
 
 CPPUNIT_TEST_SUITE_REGISTRATION(test_assignment);
