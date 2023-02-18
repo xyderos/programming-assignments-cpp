@@ -4,8 +4,8 @@
 #include <cppunit/TestRunner.h>
 #include <cppunit/extensions/TestFactoryRegistry.h>
 
-int
-main()
+auto
+main() -> int
 {
 	CPPUNIT_NS::TestResult controller;
 
