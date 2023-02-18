@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "Launch",
-            "type": "lldb-vscode",
+            "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/executable",
             "args": [],
