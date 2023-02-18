@@ -4,8 +4,8 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 
     private:
 	CPPUNIT_TEST_SUITE(test_assignment);
-	CPPUNIT_TEST(first_test);
-
+	CPPUNIT_TEST(test_division_negative);
+	CPPUNIT_TEST(test_division_positive);
 	CPPUNIT_TEST_SUITE_END();
 
     public:
@@ -13,7 +13,8 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 	void tearDown() override { }
 
     protected:
-	void first_test();
+	void test_division_negative();
+	void test_division_positive();
 };
 
 CPPUNIT_TEST_SUITE_REGISTRATION(test_assignment);
