@@ -4,8 +4,27 @@
 #include "test_assignment.h"
 
 void
-test_assignment::first_test()
+test_assignment::test_count_and_say_single_input()
 {
 
-	CPPUNIT_ASSERT(true);
+	auto result = count_and_say({ 3, 3, 2, 2, 2, 5, 1 });
+
+	std::vector<std::pair<int, int>> expected {
+		{ 1, 1 },
+		{ 2, 3 },
+		{ 3, 2 },
+		{ 5, 1 },
+	};
+
+	CPPUNIT_ASSERT(expected == result);
+}
+
+void
+test_assignment::test_count_and_say_nultiple_inputs()
+{
+	auto result = count_and_say({ 1 });
+
+	std::vector<std::pair<int, int>> expected { { 1, 1 } };
+
+	CPPUNIT_ASSERT(expected == result);
 }
