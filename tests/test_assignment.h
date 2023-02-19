@@ -4,8 +4,9 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 
     private:
 	CPPUNIT_TEST_SUITE(test_assignment);
-	CPPUNIT_TEST(first_test);
-
+	CPPUNIT_TEST(test_reverse_integer_positive);
+	CPPUNIT_TEST(test_reverse_integer_negative);
+	CPPUNIT_TEST(test_reverse_integer_trailing_zeroes);
 	CPPUNIT_TEST_SUITE_END();
 
     public:
@@ -13,7 +14,9 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 	void tearDown() override { }
 
     protected:
-	void first_test();
+	void test_reverse_integer_positive();
+	void test_reverse_integer_negative();
+	void test_reverse_integer_trailing_zeroes();
 };
 
 CPPUNIT_TEST_SUITE_REGISTRATION(test_assignment);

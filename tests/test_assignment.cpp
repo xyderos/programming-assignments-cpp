@@ -4,8 +4,25 @@
 #include "test_assignment.h"
 
 void
-test_assignment::first_test()
+test_assignment::test_reverse_integer_positive()
 {
+	auto result = reverse_integer(123);
 
-	CPPUNIT_ASSERT(true);
+	CPPUNIT_ASSERT(result == 321);
+}
+
+void
+test_assignment::test_reverse_integer_negative()
+{
+	auto result = reverse_integer(-123);
+
+	CPPUNIT_ASSERT(result == -321);
+}
+
+void
+test_assignment::test_reverse_integer_trailing_zeroes()
+{
+	auto result = reverse_integer(120);
+
+	CPPUNIT_ASSERT(result == 21);
 }
