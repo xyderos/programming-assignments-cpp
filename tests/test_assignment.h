@@ -4,7 +4,10 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 
     private:
 	CPPUNIT_TEST_SUITE(test_assignment);
-	CPPUNIT_TEST(first_test);
+	CPPUNIT_TEST(test_roman_to_int_single_digit);
+	CPPUNIT_TEST(test_roman_to_int_two_digits);
+	CPPUNIT_TEST(test_roman_to_int_three_digits);
+	CPPUNIT_TEST(test_roman_to_int_four_digits);
 
 	CPPUNIT_TEST_SUITE_END();
 
@@ -13,7 +16,10 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 	void tearDown() override { }
 
     protected:
-	void first_test();
+	void test_roman_to_int_single_digit();
+	void test_roman_to_int_two_digits();
+	void test_roman_to_int_three_digits();
+	void test_roman_to_int_four_digits();
 };
 
 CPPUNIT_TEST_SUITE_REGISTRATION(test_assignment);
