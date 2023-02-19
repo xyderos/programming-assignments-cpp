@@ -4,8 +4,8 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 
     private:
 	CPPUNIT_TEST_SUITE(test_assignment);
-	CPPUNIT_TEST(first_test);
-
+	CPPUNIT_TEST(test_remove_nth_node_from_long_list);
+	CPPUNIT_TEST(test_remove_nth_node_from_single_list);
 	CPPUNIT_TEST_SUITE_END();
 
     public:
@@ -13,7 +13,8 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 	void tearDown() override { }
 
     protected:
-	void first_test();
+	void test_remove_nth_node_from_long_list();
+	void test_remove_nth_node_from_single_list();
 };
 
 CPPUNIT_TEST_SUITE_REGISTRATION(test_assignment);
