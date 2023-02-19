@@ -4,8 +4,22 @@
 #include "test_assignment.h"
 
 void
-test_assignment::first_test()
+test_assignment::test_spiral_3x3()
 {
+	auto result = spiral({ { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } });
 
-	CPPUNIT_ASSERT(true);
+	std::vector<int> expected { 1, 2, 3, 6, 9, 8, 7, 4, 5 };
+
+	CPPUNIT_ASSERT(result == expected);
+}
+
+void
+test_assignment::test_spiral_3x4()
+{
+	auto result = spiral(
+	    { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } });
+
+	std::vector<int> expected { 1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7 };
+
+	CPPUNIT_ASSERT(result == expected);
 }
