@@ -4,8 +4,8 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 
     private:
 	CPPUNIT_TEST_SUITE(test_assignment);
-	CPPUNIT_TEST(first_test);
-
+	CPPUNIT_TEST(test_valid_bst_with_valid_bst_should_be_okay);
+	CPPUNIT_TEST(test_valid_bst_with_invalid_bst_should_not_be_okay);
 	CPPUNIT_TEST_SUITE_END();
 
     public:
@@ -13,7 +13,8 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 	void tearDown() override { }
 
     protected:
-	void first_test();
+	void test_valid_bst_with_valid_bst_should_be_okay();
+	void test_valid_bst_with_invalid_bst_should_not_be_okay();
 };
 
 CPPUNIT_TEST_SUITE_REGISTRATION(test_assignment);
