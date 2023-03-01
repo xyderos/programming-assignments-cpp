@@ -5,6 +5,8 @@ class test_assignment : public CPPUNIT_NS::TestCase {
     private:
 	CPPUNIT_TEST_SUITE(test_assignment);
 	CPPUNIT_TEST(first_test);
+	CPPUNIT_TEST(second_test);
+	CPPUNIT_TEST(third_test);
 
 	CPPUNIT_TEST_SUITE_END();
 
@@ -14,6 +16,8 @@ class test_assignment : public CPPUNIT_NS::TestCase {
 
     protected:
 	void first_test();
+	void second_test();
+	void third_test();
 };
 
 CPPUNIT_TEST_SUITE_REGISTRATION(test_assignment);
