@@ -7,5 +7,15 @@ void
 test_assignment::first_test()
 {
 
-	CPPUNIT_ASSERT(true);
+	auto result = non_decreasing({ 4, 2, 3 });
+
+	CPPUNIT_ASSERT(result);
+}
+
+void
+test_assignment::second_test()
+{
+	auto result = non_decreasing({ 4, 2, 1 });
+
+	CPPUNIT_ASSERT(!result);
 }
