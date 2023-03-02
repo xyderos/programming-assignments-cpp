@@ -6,6 +6,17 @@
 void
 test_assignment::first_test()
 {
+	CPPUNIT_ASSERT(!match("aa", "a"));
+}
 
-	CPPUNIT_ASSERT(true);
+void
+test_assignment::second_test()
+{
+	CPPUNIT_ASSERT(match("aa", "a*"));
+}
+
+void
+test_assignment::third_test()
+{
+	CPPUNIT_ASSERT(match("ab", ".*"));
 }
